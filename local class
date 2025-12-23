@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void fun(){
+    class a{
+        public:
+        int x; 
+        int y ; 
+        
+        void display(){
+            cin >> x >> y ; 
+            cout << x << y ; 
+        }
+        
+    };
+    a obj; 
+    obj.display(); 
+}
+
+int main() {
+	// your code goes here
+	fun();
+
+}
