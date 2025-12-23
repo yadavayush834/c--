@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class shape{
+    public:
+    int dimension; 
+    void getdim(){
+        cin >> dimension;
+    }
+    virtual float draw()= 0 ; 
+    
+};
+class circle: public shape{
+    public:
+    float draw(){
+        return dimension*dimension*3.14;
+    }
+};
+
+class square: public shape{
+    public:
+    float draw(){
+        return dimension*dimension;
+    }
+};
+
+int main() {
+	// your code goes here
+	circle c ; 
+	c.getdim();
+	cout<<c.draw();
+
+}
