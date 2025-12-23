@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class a{
+    public:
+    void x(){
+        cout<<"hi"<<endl;
+        
+    }
+};
+class b{
+    public:
+    void x(){
+        cout<<"hello"<<endl;
+    }
+    
+};
+
+class c:public a , public b{
+    
+};
+
+int main() {
+	// your code goes here
+	c obj; 
+	obj.a::x();
+
+}
+
+
+
